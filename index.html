@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Tu Biblioteca Web</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://source.unsplash.com/150x150/?logo"
+          alt="Logo de la biblioteca"
+        />
+      </div>
+      <h1>Tu Biblioteca Web</h1>
+    </header>
+
+    <div class="container">
+      <section class="librarian-section">
+        <h2>Área de Bibliotecario</h2>
+        <form id="book-registration-form">
+          <label for="book-title">Título del Libro:</label>
+          <input
+            type="text"
+            id="book-title"
+            name="book-title"
+            required
+            placeholder="Ingrese el título del libro"
+            value="Libro de Ejemplo"
+          />
+
+          <label for="book-pages">Número de Páginas:</label>
+          <input
+            type="number"
+            id="book-pages"
+            name="book-pages"
+            required
+            placeholder="Ingrese el número de páginas"
+            value="300"
+          />
+
+          <label for="book-code">Código del Libro:</label>
+          <input
+            type="text"
+            id="book-code"
+            name="book-code"
+            required
+            placeholder="Ingrese el código del libro"
+            value="123456"
+          />
+
+          <label for="book-isbn">ISBN:</label>
+          <input
+            type="text"
+            id="book-isbn"
+            name="book-isbn"
+            required
+            placeholder="Ingrese el ISBN del libro"
+            value="978-1234567890"
+          />
+
+          <label for="book-publisher">Editorial:</label>
+          <input
+            type="text"
+            id="book-publisher"
+            name="book-publisher"
+            required
+            placeholder="Ingrese la editorial del libro"
+            value="Editorial ABC"
+          />
+
+          <label for="book-author">Autor:</label>
+          <input
+            type="text"
+            id="book-author"
+            name="book-author"
+            required
+            placeholder="Ingrese el nombre del autor"
+            value="Autor Ejemplo"
+          />
+
+          <button type="button" id="register-book-button">
+            Registrar Libro
+          </button>
+        </form>
+      </section>
+
+      <section class="middle-column">
+        <h2>Asignar Libro a Usuario</h2>
+        <form id="assign-book-form">
+          <label for="user-select">Seleccionar Usuario:</label>
+          <select id="user-select" name="user-select">
+            <!-- Opciones de usuarios se generarán dinámicamente en JavaScript -->
+          </select>
+
+          <label for="book-select">Seleccionar Libro:</label>
+          <select id="book-select" name="book-select">
+            <!-- Opciones de libros se generarán dinámicamente en JavaScript -->
+          </select>
+
+          <label for="loan-date">Fecha de Préstamo:</label>
+          <input
+            type="date"
+            id="loan-date"
+            name="loan-date"
+            required
+            value="2023-09-19"
+          />
+
+          <label for="return-date">Fecha de Devolución:</label>
+          <input
+            type="date"
+            id="return-date"
+            name="return-date"
+            required
+            value="2023-09-26"
+          />
+
+          <button type="button" id="assign-book-button">Asignar Libro</button>
+
+          <!-- Botón para actualizar la lista de usuarios y libros -->
+          <button type="button" id="update-lists-button">
+            Actualizar Lista de Libros y Usuarios
+          </button>
+        </form>
+      </section>
+
+      <section class="user-section">
+        <h2>Área de Usuario</h2>
+        <form id="user-registration-form">
+          <label for="user-name">Nombre del Usuario:</label>
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            required
+            placeholder="Ingrese el nombre del usuario"
+            value="Usuario Ejemplo"
+          />
+
+          <label for="user-code">Código del Usuario:</label>
+          <input
+            type="text"
+            id="user-code"
+            name="user-code"
+            required
+            placeholder="Ingrese el código del usuario"
+            value="ABC123"
+          />
+
+          <label for="user-phone">Teléfono:</label>
+          <input
+            type="tel"
+            id="user-phone"
+            name="user-phone"
+            required
+            placeholder="Ingrese el número de teléfono"
+            value="123-456-7890"
+          />
+
+          <label for="user-address">Dirección:</label>
+          <input
+            type="text"
+            id="user-address"
+            name="user-address"
+            required
+            placeholder="Ingrese la dirección del usuario"
+            value="Calle 123, Ciudad Ejemplo"
+          />
+
+          <button type="button" id="register-user-button">
+            Registrar Usuario
+          </button>
+        </form>
+
+        <div class="search-section">
+          <h2>Buscar Ejemplar</h2>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Buscar por código o localización"
+          />
+          <button id="search-button">Buscar</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="book-list">
+      <h2>Lista de Libros Registrados</h2>
+      <ul id="book-list-ul">
+        <!-- Aquí se mostrarán los libros registrados -->
+      </ul>
+    </section>
+
+    <section class="user-list">
+      <h2>Lista de Usuarios Registrados</h2>
+      <ul id="user-list-ul">
+        <!-- Aquí se mostrarán los usuarios registrados -->
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        Tu Biblioteca Web &copy; 2023 -
+        <a href="mailto:alex.henaof@gmail.com">Axel</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

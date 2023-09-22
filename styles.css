@@ -1,0 +1,232 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://source.unsplash.com/1920x1080/?library") center/cover
+    no-repeat fixed;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+a {
+  text-decoration: underline;
+  color: white;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1333px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del encabezado */
+header {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Estilos de los formularios */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo con opacidad */
+  backdrop-filter: blur(5px); /* Efecto de vidrio */
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+input[type="date"] {
+  width: 86%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus {
+  background: rgba(255, 255, 255, 0.4); /* Fondo con opacidad al enfocar */
+}
+
+button {
+  background: rgba(0, 123, 255, 0.8); /* Color de fondo con opacidad */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: rgba(0, 123, 255, 1); /* Color de fondo con opacidad */
+}
+
+/* Estilos de imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos del pie de página */
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  padding: 10px 0;
+  backdrop-filter: blur(10px); /* Efecto de vidrio */
+}
+
+/* Estilos del buscador */
+.search-section {
+  margin-top: 30px;
+}
+
+#search-input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo con opacidad */
+  backdrop-filter: blur(5px); /* Efecto de vidrio */
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+#search-input:focus {
+  background: rgba(255, 255, 255, 0.4); /* Fondo con opacidad al enfocar */
+}
+
+#search-button {
+  background: rgba(0, 123, 255, 0.8); /* Color de fondo con opacidad */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#search-button:hover {
+  background: rgba(0, 123, 255, 1); /* Color de fondo con opacidad */
+}
+
+/* Estilos para los select */
+select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo con opacidad */
+  backdrop-filter: blur(5px); /* Efecto de vidrio */
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+/* Estilos para los select cuando están enfocados */
+select:focus {
+  background: rgba(255, 255, 255, 0.4); /* Fondo con opacidad al enfocar */
+}
+
+/* Estilos para las opciones de los select */
+select option {
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+/* Estilos para las opciones de los select cuando están seleccionadas */
+select option:checked {
+  background: rgba(0, 123, 255, 0.8); /* Color de fondo con opacidad */
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+/* Estilos de la lista de libros */
+.book-list {
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Efecto de vidrio */
+}
+
+.book-list h2 {
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+#book-list-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#book-list-ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Estilos de la lista de usuarios */
+.user-list {
+  background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Efecto de vidrio */
+}
+
+.user-list h2 {
+  color: #fff; /* Color de texto principal en modo oscuro */
+}
+
+#user-list-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#user-list-ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
